@@ -20,6 +20,32 @@
     
 
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        /* Estilos para la fecha estática */
+        .static-date-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        
+        .static-date-container .coming-soon-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+            color: var(--main-white);
+        }
+        
+        .static-date-container .static-date {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1;
+            color: var(--main-yellow);
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
 
@@ -39,6 +65,10 @@
                 <h1 class="year">2026</h1>
             </div>
 
+            <!-- ============================================ -->
+            <!-- CONTADOR COMENTADO - Descomentar si se necesita -->
+            <!-- ============================================ -->
+            <!--
             <div class="countdown-container" id="countdown">
                 <div class="countdown-item">
                     <span class="number" id="days">00</span>
@@ -58,9 +88,24 @@
                 </div>
             </div>
             <div id="tournament-started" style="display: none;">¡EL TORNEO HA COMENZADO!</div>
+            -->
+            <!-- ============================================ -->
+            <!-- FIN DEL CONTADOR COMENTADO -->
+            <!-- ============================================ -->
+
+            <!-- ============================================ -->
+            <!-- VARIANTE: FECHA ESTÁTICA -->
+            <!-- ============================================ -->
+            <div class="static-date-container">
+                <p class="coming-soon-label">Próximamente</p>
+                <p class="static-date">Noviembre 2026</p>
+            </div>
+            <!-- ============================================ -->
+            <!-- FIN DE FECHA ESTÁTICA -->
+            <!-- ============================================ -->
 
             <div class="details-container">
-                <p class="details-date">14-17 DE MAYO</p>
+                <!--<p class="details-date">14-17 DE MAYO</p> -->
                 <p class="details-location">ZAPOPAN, JAL</p>
                 <p class="details-category">CATEGORÍAS INFANTILES FEMENIL Y VARONIL</p>
             </div>
@@ -81,10 +126,6 @@
 
     <script src="assets/js/gsap.min.js"></script>
     
-
-
-
-
     <script src="assets/js/main.js"></script>
 </body>
 </html>
